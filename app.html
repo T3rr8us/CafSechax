@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>App form</title>
+    </head>
+<style>
+body {
+	background-color: #000;
+} 
+#sidenav {
+	height: 580px;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+#sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: grey;
+	display: block;
+}
+#sidenav a:hover {
+	color: whitesmoke;
+}
+#sidenav .close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.user {
+	background-color: blue;
+}
+.introduction {
+	width: 97%;
+	height: 40px;
+	font-size: 30px;
+	background-color: #fff;
+	border: 1px solid #00ff00;
+	border-radius: 40px;
+	color: #000;
+}
+.button1 {
+	width: 90%;
+	height: 50px;
+	font-size: 20px;
+	border: 2px solid green;
+	border-radius: 50px;
+	background-color: #000;
+	color: #fff;
+}
+.Logo {
+	float: right;
+	font-size: 30px;
+	text-align: center;
+	background-color: ;
+	width: 90%;
+	height: 50px;
+}
+p {
+	color: white;
+	font-size: 18px;
+	text-align: left;
+}
+.dropdown_content {
+	width: 100%;
+	float: center;
+}
+.ctitle {
+	background-color: #0000ff;
+	border-radius: 10px;
+}
+.title {
+	background-color: #0000ff;
+	border-radius: 10px;
+}
+#sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#basic-commands {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#basic-commands a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+#basic-commands a:hover {
+    color: whitesmoke;
+}
+#basic-commands .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.command-button {
+	width: 85%;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid green; 
+	border-radius: 0px;
+	background-color: #000;
+	color: #fff;
+}
+.command-tools {
+	width: 85%;
+	height: 50px;
+	font-size: 20px;
+	border: 2px solid green; 
+	border-radius: 0px;
+	background-color: #000;
+	color: #fff;
+}
+#network-commands {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#network-commands a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+#network-commands a:hover {
+    color: whitesmoke;
+}
+#network-commands .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#tips-commands {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#tips-commands a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+#tips-commands a:hover {
+    color: whitesmoke;
+}
+#tips-commands .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#advance-commands {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#advance-commands a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+#advance-commands a:hover {
+    color: whitesmoke;
+}
+#advance-commands .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#phishing-commands {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#phishing-commands a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+#phishing-commands a:hover {
+    color: whitesmoke;
+}
+#phishing-commands .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.button2 {
+	float: left;
+	width: 90%;
+	height: 50px;
+	font-size: 20px;
+	border: 2px solid blue;
+	border-radius: 4px;
+	background-color: #000;
+	color: #fff;
+}
+.box1 {
+	width: 80%;
+	height: 489px;
+	float: left;
+	font-size: 18px;
+	margin: 2px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box2 {
+	width: 80%;
+	height: 765px;
+	float: left;
+	font-size: 18px;
+	margin: 2px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box3 {
+	width: 80%;
+	height: 630px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box4 {
+	width: 80%;
+	height: 430px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box5 {
+	width: 80%;
+	height: 670px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box6 {
+	width: 80%;
+	height: 630px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box7 {
+	width: 80%;
+	height: 630px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box8 {
+	width: 80%;
+	height: 670px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box9 {
+	width: 80%;
+	height: 630px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box10 {
+	width: 80%;
+	height: 600px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box11 {
+	width: 80%;
+	height: 965px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box12 {
+	width: 80%;
+	height: 570px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box13 {
+	width: 80%;
+	height: 720px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box14 {
+	width: 80%;
+	height: 1010px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box15 {
+	width: 80%;
+	height: 570px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box16 {
+	width: 80%;
+	height: 1040px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box17 {
+	width: 80%;
+	height: 390px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box18 {
+	width: 80%;
+	height: 470px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box19 {
+	width: 80%;
+	height: 570px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+.box20 {
+	width: 80%;
+	height: 570px;
+	float: left;
+	margin: 2px;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+	position: auto;
+	padding: 20px 30px 20px 20px;
+}
+#Vulnerability {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#Vulnerability a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #000;
+   display: block;
+}
+#Vulnerability a:hover {
+    color: whitesmoke;
+}
+#Vulnerability .close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.button3 {
+	width: 80%;
+	float: center;
+	height: 50px;
+	font-size: 20px;
+	border: 2px solid green;
+	border-radius: 50px;
+	background-color: #000;
+	color: #fff;
+}
+.button4 {
+	float: left;
+	width: 90%;
+	height: 50px;
+	font-size: 20px;	
+	border: 2px solid #008000;
+	border-radius: 50px;
+	background-color: #000;
+	color: #fff;
+}
+.button5 {
+	width: 80%;
+	float: center;
+	height: 50px;
+	font-size: 20px;
+	border: 2px solid green;
+	border-radius: 0px;
+	background-color: #000;
+	color: #fff;
+}
+#info {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#info a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+
+#info a:hover {
+    color: whitesmoke;
+}
+
+#info .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.container1 {
+width: 90%;
+border: 1px solid blue;
+border-radius: 20px;
+}
+.p-align {
+text-align: center;
+}
+#Exploitation {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lime;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#Exploitation a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+
+#Exploitation a:hover {
+    color: whitesmoke;
+}
+
+#Exploitation .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.griter {
+	float: right;
+	color: red;
+}
+#more {
+    height: 580px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ff00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#more a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+
+#more a:hover {
+    color: whitesmoke;
+}
+
+#more .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.button6 {
+	float: left;
+	width: 90%;
+	height: 57px;
+	font-size: 20px;
+	border: 2px solid blue;
+	border-radius: 4px;
+	background-color: #000;
+	color: #fff;
+}
+
+</style>
+<body>
+<br>
+<span class="logo" onclick="document.getElementById('sidenav').style.width = '220px'" style="font-size:35px"><font color="white">&#9776;</font></span><header class="Logo"><font color="red">&Hopf;4C&#8490;E&Ropf;</font><font color="yellow">SPL&#9762;IT</font></header>
+<hr color="red">
+<hr color="red">
+<br>
+        <div id="sidenav">
+        <a href="javascript:void(0)" class="close" onclick="document.getElementById('sidenav').style.width = '0px'">&times;</a>
+        <center>
+        <h1 class="user"><font color="red">User</font></h1>
+        </center>
+        <div class="dropdown-content">
+        <a href="javascript:showhide('uniquename1')">
+        About This App</a>
+        <div id="uniquename1" style="display:none;">
+        <div class="container1">
+        <h4 class="introduction">
+        <center>Our App</center></h4>
+        <p class="p-align">This App Helps The User To Know The Various Commands Of Termux. There Are Many Commands, Tools, Hacking Books, And Free Hacking Course Available For User To Learn And Study. If You Have Any Problem Or Questions About Our App Please Contact Me... </p>
+       </div></div><br><div class="dropdown-content">
+       <a href="javascript:showhide('uniquename6')">
+       App Creator</a>
+       <div id="uniquename6" style="display:none;">
+       <div class="container1">
+       <h4 class="introduction">
+       <center>Creator</center></h4>
+       <p class="p-align">The Creator Name Is <br>&#10092; Zack Smith &#10093 Also Knwon As &#10092Mr. P74NK&#10093. <br>I'm A Pentister, Hacker, Web Developer, And Much More. I'm 20 Years Old Boy From United States.</p>
+       </div></div><br>
+        <div class="dropdown-content">
+     	<a href="javascript:showhide('uniquename2')">
+        Disclaimer</a>      
+        <div id="uniquename2" style="display:none;">
+        <div class="container1">
+        <h4 class="introduction">
+        <center>Disclaimer</center></h4>
+        <p class="p-align">Disclaimer Our App Does Not Promote Or Encourage Any Illigal Activities. All Contents Provided By This App Is Meant For Educational Purpose Only. The App Creator Is Not Responsible For Any Misuse Of The Information Provided. All Of The Information In This App Is Meant To Help The User A Penetration Testing Defense Attitude In
+        Order To Prevent The Attacks Discussed. In Noway Should You Use The Information To Cause Any Kind Of Damage Or Indirectly.</p>    
+        </div></div></div><br>                 
+        <div class="dropdown-content">
+        <a href="javascript:showhide('uniquename3')">   
+     	Contact</a>
+        <div id="uniquename3" style="display:none;">
+        <div class="container1">
+        <h4 class="introduction">
+        <center>Contact</center></h4>
+        <p class="p-align">If You Have Any Questions Or Any Problem Of My App Freely Contact Me On :-
+        <br><br><font color="blue">WhatsApp :-<br>
+        +63 945 766 2949<br><br>Facebook :-<br>
+        https://www.facebook<br>.com/jamescarl.retiza.9
+     </font></p></div></div></div></div>
+     <br><br><br>
+     <p><font color="#E5E9E0">Copyright &#x00A9;2020</font><font color="#E5E9E0"> | Mr. P74NK</font></div></p>
+	</div></div></div><center>
+	<center><h1 class="ctitle">Introduction</h1></center>
+	<center><div class="dropdown_content">
+	<a href="javascript:showhide('uniquename')">
+	<button class="button5">What Is Termux</button></a>
+	<div id="uniquename" style="display:none;">
+	<p><font color="lime">Termux is a Terminal Emulator 
+	Plus Linux Environment, That 
+	allows us to use the Linux
+	Environment on our Android 
+	within few clicks..</font></p>      </center>
+	</div></div><br>
+	<center><div class="dropdown_content">
+	<a href="javascript:showhide('uniquename4')">
+	<button class="button5">F A Q.. About Termux</button></a>
+	<div id="uniquename4" style="display:none;">
+	<p><font color="lime">1. Does Termux Useful For Hacking?
+	My Answer Is Yes.. You can use Termux 
+	for Hacking, you can use some popular
+	Hacking Tools in Termux.<br><br>2. Does Termux Requires Root Permissions?<br>Not at All, Root is Not Necessary To Use 
+	Termux, if You Have Root then you can do some advanced stuff, if you don't have 
+	root then nothing to worry still you can do the same.
+	stuff. <br><br>3. Can i Became a Hacker by Using Termux App?<br>Apps / Tools doesn't Made Hackers, 
+	Hackers Made Tools.Perhaps you won't Be a Hacker unless you have the knowledge.
+	<br><br>4. Can i use Termux To Hack Websites?<br>My Answer is Yes, You Can use 
+	Termux to Hack Websites with the 
+	help of sqlmap and
+	other hacking tools.
+	<br><br>5. Can i Hack Facebook, Gmail, Instagram 
+	using Termux?
+	<br>Yes You Can, Only If You Know Which 
+	Tool You Should use.
+	<br><br>6. Can i Hack a Android Phone With 
+	Termux?<br>Yes You can Hack Using Metasploit 
+	Framework In Termux, Not Only 
+	Android
+	Smartphones you can do even more 
+	with Metasploit.<br><br>7. Can I Hack Wifi Through Termux?
+	My Answer is Yes and No, You Need An 
+	External Router To Hack Wifi. And 
+	A Create a Wordlist in Termux 
+	For Hacking
+	Wifi, while aircrack-ng, airmon-ng etc, 
+	Wifi Hacking Tools Can Be Installed In 
+	Termux But Not Usable In All Devices<br><br>8. Can I Hack Everything With Termux?
+	<br>We Can Hack Anything But Not 
+	Everything..!</font></p></div><br><br>
+	<hr><h1 class="title">Some Commands</h1>
+	</div></center>
+	<center><span onclick="document.getElementById('basic-commands').style.width = '340px'" style="font-size:30px"><button class="command-button">Basic Commands<div class="griter">&#10095;</div></button></span>
+	<div id="basic-commands">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('basic-commands').style.width = '0px'">&times;</a>        
+	<p><font color="black">> cd . .<br>
+	Change current directory to parent 
+	directory.
+	<br><br>>cd -<br>Move one directory back from where 
+	you are now. <br><br>  >cp-r <br>Used to copy any directory <br>[including hidden files].
+	<br><br>>cp -f<br>Force copy by removing the <br>destination files if needed. <br><br>  >mv -f <br>
+	Force move by overwriting <br>destination files without prompt. <br><br>>mv -v <br>To move any directorymv <br>[file1 name] [new file2 name]
+	<br>to rename files file1 renames to file2. <br><br>>Is <br>List current folder contents. <br><br>>is -l<br>
+	To show files/directory size,modified,date,time,owner of file,permissions. <br><br>>ls -a<br>List of all files including 
+	hidden files. <br><br>>ls -R<br>It shows recursively list of sub-directories. <br><br>>cat[file] <br>To display file information. <br><br>>nano [file]<br>To display and edit files. 
+	<br><br>>wget<br>This command used to download <br>any file from online source like <br>github. <br><br>>git clone [github url]<br>Used to clone any repository form github.
+	<br><br>>rm [file]<br>Used to remove/delete any files. 
+	<br><br>>clear<br>To clear all the task on a terminal; <br>means clear terminal. <br><br>>uname -m<br>Used to find the architecture 
+	of your device.</font><h1><font color="red">Rate Us!!</font></h1></p>
+	</div></center>
+	<br><center><span class="tribar" onclick="document.getElementById('network-commands').style.width = '340px'" style="font-size:30px"><button class="command-button">Network Commands<div class="griter">&#10095;</div></button></span>
+	<div id="network-commands">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('network-commands').style.width = '0px'">&times;</a>
+	<p><font color="black">>ifconfig -a<br>
+	Display the configuration of 
+	all interfaces, both active 
+	and inactive<br><br>>ifconfig eth0<br>
+	Used to view the network settings <br>on the interface eth0<br><br>>ifconfig wlan0<br>
+	Used to view the network settings <br>on wlan0<br><br>>fconfig eth1 up<br>
+	Used to active the network 
+	interface eth1. <br><br>>ifocnfig wlan0 down<br>
+	Used to deactive the network 
+	interface wlan0. <br><br>>ifconfig eth1 down<br>
+	Deactive the Network <br>interface eth1. <br><br>>ifconfig wlan0 up<br>
+	Active the network interface 
+	wlan0. <br><br>>ping [host]<br>
+	Used to ping host ip shows 
+	result.<br><br>>arp<br>
+	Check network card and 
+	shows ip address.<br><br>>netstat<br>
+	Reveiew network connection and <br>open sockets. <br><br>>nslookup [Domain]<br>Used to find DNS related 
+	Query. <br><br>>tracerout [ip address]<br>
+	Display no of hops and response <br>time to get a remote system.<br><br>>whois [domain]<br>
+	Get basic informaion about 
+	domain. <br><br>>telnet [ip address] [port]<br>Telnet connection !.</font><h1><font color="red">Rate Us!!</font></h1></p>
+	</div></center>
+	<br><center><span class="tribar" onclick="document.getElementById('tips-commands').style.width = '340px'" style="font-size:30px"><button class="command-button">Tips Commands<div class="griter">&#10095;</div></button></span>
+	<div id="tips-commands">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('tips-commands').style.width = '0px'">&times;
+	</a>
+	<p><font color="black">
+	>cd [directory name]<br>
+	Used to change directory.<br><br>>ls<br>
+	Used to Print the directory 
+	files<br><br>>ifconfig<br>
+	It shows your network interface <br>and local ip address. <br><br>>pwd<br>It shows Your current 
+	working <br>directory.<br><br>>uname -m<br>It shows Your device 
+	architecture.<br><br>>curl ifconfig.me<br>
+	It shows Your public IP 
+	address. <br><br>>exit<br>
+	This command is used to Exit from Terminal.
+	<br><br></font><h1><font color="red">Rate Us!!</font></h1></p>
+	</div></center>
+	<br><center><span class="tribar" onclick="document.getElementById('advance-commands').style.width = '340px'" style="font-size:30px"><button class="command-button">Advance Commands<div class="griter">&#10095;</div></button></span>
+	<div id="advance-commands">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('advance-commands').style.width = '0px'">&times;
+	</a>
+	<p><font color="black">
+	>du<br>
+	Display directory space 
+	usage. <br><br>>df<br>Display disk usage. 
+	<br><br>>cal<br>To display calender. <br><br>>whoami<br>It shows your login name. 
+	<br><br>>uname -a<br>Used to display kernal information.
+	<br><br>>date<br>It shows current date and time. <br><br>>uptime<br>
+	This command shows system <br>current uptime. <br><br>>cat /proc/meminfo<br>
+	It shows memory information. <br><br>>cat /proc/cpuinfo<br>It shows cpu information. <br><br>>cat /proc/cpuinfo<br>It shows cpu information.
+	<br><br>>cat /proc/version<br>It shows information about Linux System. <br><br>>free<br>Display memory swape usage. <br><br>>kill [PID]<br>
+	kill process by pid [Proces ID].<br><br>>ps<br>
+	It shows all running process on your system.<br>
+	</font><h1><font color="red">Rate Us!!</font></h1></p>
+	</div></center><br><hr>
+	<center><h1 class="title">Tools Commands</h1><span class="tribar" onclick="document.getElementById('phishing-commands').style.width = '320px'" style="font-size:30px"><button class="command-tools">Phishing<div class="griter">&#10095;</div></button></span>
+	<div id="phishing-commands">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('phishing-commands').style.width = '0px'">&times;
+	</a>
+	<br><div class="dropdown-content">
+	<a href="javascript:showhide('BlackEye')">  
+	<button class="button2">BlackEye</button></a>
+	<div id="BlackEye" style="display:none;">
+	<br><br><div class="box1"><font color="black">This is one of the most complete Phishing tool in termux.</font>
+	<br><br>Installation:<br>
+	$ apt update && upgrade<br>$ apt install git<br>$ apt install curl
+	<br>$ git clone https://github.com/An0nUD4Y/<br>blackeye<br>$ cd blackeye<br>$ chmod +x *<br><br>Run:-
+	<br>$ bash blackeye.sh<br><br>Now select what you want. 
+	</div></div></div>
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('HiddenEye')">   
+	<button class="button2">HiddenEye</button></a>
+	<div id="HiddenEye" style="display:none;">
+	<br><br><div class="box2"><font color="black">Hidden Eye is a tool that contain a variety of online attacking tools such as Phishing, Keylogger, Information gathering, etc. Hidden Eye used to perform plenty of online attacks on user accounts. By using Hidden Eye you can have your target live information such as IP ADDRESS, Geolocation, ISP, Country, & many more.</font>
+	<br><br>Installation:<br><br>
+	$ apt-update && apt upgrade -y<br>$ pkg install git python php curl openssh grep
+	<br>$ git clone -b Termux-Support-Branch https://github.com/DarkSecDeve<br>lopers/HiddenEye.git<br>$ chmod 777 HiddenEye
+	<br>$ pip install requests<br>$ cd HiddenEye<br><br>Run:-<br>$ python HiddenEye.py
+	or <br>$ ./HiddenEye.py
+	</div></div></div>    
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('ShellPhish')">   
+	<button class="button2">ShellPhish</button></a>
+	<div id="ShellPhish" style="display:none;">
+	<br><br><div class="box3"><font color="black">Phishing Tool for 18 social media: Instagram, Facebook, Snapchat, Github, Twitter, Yahoo, Protonmail, Spotify, Netflix, Linkedin, Wordpress, Origin, Steam, Microsoft, InstaFollowers, Gitlab, Pinterest</font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade
+	<br>$ apt install git<br>$ git clone https://github.com/suljot/shell<br>phish<br>$ cd shellphish<br>
+	<br>Run :<br>$ bash shellphish.sh<br><br>:-select your option. It will generates phishing url ..Now send this url to victim for phishing
+	</div></div></div>    
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('SocialPhish')">   
+	<button class="button2">SocialPhish</button></a>
+	<div id="SocialPhish" style="display:none;">
+	<br><br><div class="box3"><font color="black">SocialFish is a ultimate phishing tool for 
+	Twitter, StackOverFlow, Wordpress, github, google, facebook and so on</font>
+	<br><br>Installation:<br><br>$ apt update && upgrade<br>$ apt install git<br>$ apt install python2
+	<br>$ git clone https://github.com/UndeadSec/<br>SocialFish.git 
+	<br>$ cd SocialFish<br>$ chmod +x *<br>$ pip2 install -r requirements.txt
+	<br><br>Usage:-<br>Now Select Target and it will generate an URL using Ngrok. Then send this link to victim and wait for cradentials(Username & Password)</div>
+	</div></div>    
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('NexPhisher')">   
+	<button class="button2">NexPhisher</button></a>
+	<div id="NexPhisher" style="display:none;">
+	<br><br><div class="box3"><font color="black">NexPhisher is an automated Phishing tool made for Termux & Linux .<br>The phishing Pages are Taken from Zphisher under GNU General Public License v3.0 . This tool has 37 Phishing Page Templates of 30 Websites.There are 5 Port Forwarding Options including Localhost !!</font>
+	<br><br>Installation:<br><br>$ apt update
+	<br>$ apt install git -y<br>$ git clone https://github.com/htr-tech/nexphisher
+	<br>$ cd nexphisher<br>$ bash setup<br><br>Run: <br>$ bash nexphisher
+	</div></div>        
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('Weeman')">   
+	<button class="button2">Weeman</button></a>
+	<div id="Weeman" style="display:none;">
+	<br><br><div class="box3"><font color="black">Weeman is advanced phishing tool available for termux.</font>
+	<br><br>Installation:<br><br>$ apt update && upgrade<br>$ apt install git
+	<br>$ apt install python2<br>$ git clone https://github.com/evait-security/weeman
+	<br>$ cd weeman<br>$ chmod +x *<br><br>Usages:<br>$ python2 weeman.py
+	<br>$ set url http://target.com<br>$ set action_url http://target.com
+	<br>$ run<br><br>It will provide cradential harvesting platform.
+	</div></div>     
+	<br><br><div class="dropdown-content">
+	<a href="javascript:showhide('ZPhisher')">   
+	<button class="button2">ZPhisher</button></a>
+	<div id="ZPhisher" style="display:none;">
+	<br><br><div class="box4"><font color="black">Zphisher is upgraded version of shellphish.</font>
+	<br><br>Installation:<br><br>$ apt update
+	<br>$ apt install git php openssh curl -y<br>$ git clone https://github.com/htr-tech/zphisher
+	<br>$ cd zphisher<br>$ chmod +x zphisher.sh<br><br>Run: <br>$ bash zphisher.sh
+	</div></div> 
+	<br><br><h1><font color="red">Rate Us!!</font></h1>
+	</div></div></div></div></div>
+	</div></center> 
+	<br><center><span class="tribar" onclick="document.getElementById('Vulnerability').style.width = '320px'" style="font-size:30px"><button class="command-tools">Vulnerability<div class="griter">&#10095;</div></button></span>
+	<div id="Vulnerability">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('Vulnerability').style.width = '0px'">&times;
+	</a><br>
+	<font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('OwScan')">   
+	<button class="button2">OwScan</button></a>
+	<div id="OwScan" style="display:none;">
+	<br><br><div class="box5"><font color="black">scan your website for vulnerabilities.find website applications vulnerabilities and fingerprint the target web application. </font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade
+	<br>$ apt install git<br>$ apt install php<br>$ git clone
+	https://github.com/gameye98<br>/owscan
+	<br>$ cd owscan<br>$ chmod +x *<br><br>usage :
+	<br>$ php owscan.php<br><br>enter target site for example : example.com. it gives you information related to your target site.
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('CSM Map')">   
+	<button class="button2">CSM Map</button></a>
+	<div id="CSM Map" style="display:none;">
+	<br><br><div class="box5"><font color="black">cms map is a tool used to find the vulnerabilities of website such as joomla,dripal,wordpress
+	with the help of this tool we can scan our site vulnerabilities and fix it,and stay safe and secure
+	execute these commands one by one to install.</font>
+	<br><br>Installation:<br><br>$ apt update
+	<br>$ apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ git clone
+	https://github.com/Dionach/<br>CMSmap.git
+	<br>$ cd CMSmap<br>$ chmod +x *<br><br>usage :
+	<br>$ python2 cms.py -h<br>[it shows all options how we can use this tool]
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Click Jacking Scanner')">   
+	<button class="button2">Click Jacking Scanner</button></a>
+	<div id="Click Jacking Scanner" style="display:none;">
+	<br><br><div class="box8"><font color="black">This script scans target site is vulnerable for this attack</font>
+	<br><br>Installation:<br>
+	<br>$ apt update && apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ apt install python
+	<br>$ git clone https://github.com/D4Vinci/Click<br>jacking-Tester<br>$ cd Clickjacking-tester<br>$ chmod +hm *<br>
+	<br>Now create here file.text file, in this file paste vcitem website and save it
+	<br><br>usage :<br>$ python3 Clickjacking-tester.py file.text<br><br>Now it starts scanning if target is vulnerable then it shows you..
+	</div></div> </font>                
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('TM-Scanner')">   
+	<button class="button2">TM - Scanner</button></a>
+	<div id="TM-Scanner" style="display:none;">
+	<br><br><div class="box9"><font color="black">TM-scanner is simple python script. this tool for detecting vulnerabilities in websites</font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade<br>$ apt install git<br>$ apt install python2
+	<br>$ apt install python<br>$ git clone https;//github.com/Technical<br>Mujeeb/TM-scanner<br>$ cd TM-scanner
+	<br>$ chmod +x *<br>$ sh install.sh<br><br>usage :<br>$ python2 tmscanner.py<br><br>select your option and enter target site[example.com]
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('SQLI Scan')">   
+	<button class="button2">SQLI Scan</button></a>
+	<div id="SQLI Scan" style="display:none;">
+	<br><br><div class="box12"><font color="black">Sqliscan by dork :</font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade<br>$ apt install git
+	<br>$ apt install curl<br>$ git clone<br> https://github.com/thelinuxchoice<br>/sqliscan<br>$ cd sqliscan<br>$ chmod +x *
+	<br><br>usage :<br>$ ./sqliscan.sh<br><br>Now enter your dorks it will start collecting all vulnerable sites related to your dork and also these sites saved in saved.txt file.
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('AndroBug')">   
+	<button class="button2">AndroBug Framework</button></a>
+	<div id="AndroBug" style="display:none;">
+	<br><br><div class="box11"><font color="black">Androbug framework is used to check the android apps vulnerabilities
+	to find bugs in android application.
+	Execute these commands one by one to install.</font>
+	<br><br>Installation:<br><br>$ apt update
+	<br>$ apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ git clone https://github.com/AndroBugs/<br>AndroBugs_Framework
+	<br>$ cd AndroBugs_Framework<br>$ chmod +x *<br><br>usage :<br>Now move your app to AndroBugs_Framework folder
+	for example :
+	mv app.apk /$HOME/AndroBugs_Framework/
+	$ python2 androbugs.py -f app.apk -o result.txt
+	above command is used to check app bugs..
+	app.apk = is your app name
+	result.txt = to store all information
+	It shows all bugs and vulnerabilities of your app
+	that's it. 
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Commix')">   
+	<button class="button2">Commix</button></a>
+	<div id="Commix" style="display:none;">
+	<br><br><div class="box11"><font color="black">Automated All-in-One OS command injection and exploitation tool
+	can be used from web developers, penetration testers or even security
+	researchers in order to test web-based applications
+	with the view to find bugs, errors or vulnerabilities
+	related to command injection attacks.</font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade
+	<br>$ apt install git<br>$ apt install python2<br>$ git clone https://github.com/<br>commixproject/commix<br>$ cd commix
+	<br>$ chmod +x *<br><br>usage :<br>$ python2 commix.py<br><br>Now it shows how you can use this too..
+	<br>$ python2 commix.py -h<br><br>it shows all options...<br><br>$ python2 commix.py -u site.com<br>it shows all information....
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('WpSeku')">   
+	<button class="button2">WpSeku</button></a>
+	<div id="WpSeku" style="display:none;">
+	<br><br><div class="box13"><font color="black">wpseku = wordpress security scanner
+	we can find vulnerabilities in wordpress sites
+	this is very usefull tool</font>
+	<br><br>Installation:<br><br>$ apt update<br>$ apt upgrade
+	<br>$ apt install git<br>$ apt install python2<br>$ apt install python<br>$ git clone<br> https://github.com/m4110k/<br>WPSeku<br>$ cd WPSeku
+	<br>$ chmod +x *<br>$ pip install -r requirements.txt<br><br>usage :<br>$ python wpseku.py
+	<br><br>here all options are present to use this tool<br>example :<br>$ python wpseku.py --url http:target.com
+	</div></div> </font>
+	<br><br><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('RouterSploit')">   
+	<button class="button2">RouterSploit FrameWork</button></a>
+	<div id="RouterSploit" style="display:none;">
+	<br><br><div class="box14"><font color="black">RouterSploit Framework = scan the routers devices and check the vulnerabilities of Routers/Devices
+	and exploits by the using frameworks
+	it consists of many more powerful modules for penetration testing operations</font>
+	<br><br>Installation:<br><br>$ apt update
+	<br>$ apt upgrade<br>$ apt install python<br>$ apt install python2<br>$ git clone<br> https://github.com/reverse-shell/routersploit.git
+	<br>$ cd routersploit<br><br>Now install These all packages step by step :<br><br>$ pip2 install -r requirments-dev.txt
+	<br>$ pip2 install -r requirments.txt<br>$ pip2 install request<br>$ pip2 install requests<br><br>Run routersploit:<br>$ python3 rsf.py
+	<br><br>rsf> show all<br>it's shows all modules of rotersploit<br><br>rsf> use [module name]<br>it shows how you can use that module
+	</div></div> </font>
+	<br><br><h1><font color="red">Rate Us!!</font></h1>
+	</div></center>
+	<br><center><span class="tribar" onclick="document.getElementById('info').style.width = '320px'" style="font-size:30px"><button class="command-tools">Information gathering<div class="griter">&#10095;</div></button></span>
+	<div id="info">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('info').style.width = '0px'">&times;</a>      
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Tool-X')">   
+	<button class="button2">Tool-X</button></a>
+	<div id="Tool-X" style="display:none;">
+	<br><br><div class="box5"><font color="black">Tool-X is a tool for Termux users we can install some kali linux tools with this tool. Follow these commands to install this tool in Termux</font>
+	<br><br>Installation:<br><br>$ apt update <br>$ apt upgrade<br>$ apt install git<br>$ git clone <br>https://github.com/Raj<br>kumrdusad/Tool-X <br>$ cd Tool-X<br>$ chmod +x *<br>$ sh install.sh 
+	<br><br>usage :<br>To run this tool type <br>$ Tool-X <br><br>Now select or type number to install any tool
+	</div></div><br> 
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('RED_HAWK')">   
+	<button class="button2">RED HAWK</button></a>
+	<div id="RED_HAWK" style="display:none;">
+	<br><br><div class="box16"><font color="black">Red Hawk = All in one tool for Information Gathering and Vulnerability ScanningScans That You Can Perform Using RED HAWK :Basic ScanWhois Lookup Geo-IP Lookup Grab Banners DNS Lookup Subnet Calculator Nmap Port Scan Sub-Domain Scanner Reverse IP Lookup & CMS Detection Error Based SQLi Scanner Bloggers View WordPress Scan Crawler MX Lookup Scan For Everything </font>
+	<br><br>Installation:<br><br>:$ apt update && apt upgrade<br> $ apt install git <br>$ apt install php <br>$ git clone <br>https://github.com/Tuhinshubhra<br>/RED_HAWK <br>$ RED_HAWK <br>$ chmod +x * <br><br>usage :<br>$ php rhawk.php <br><br>Use the <br>$ help <br>command to see the command list type in the domain name you want to scan (without Http:// OR Https://).Select whether The Site Runs On HTTPS or not. Select the type of scan you want to perform Leave the rest to the scanner
+	</div></div><br> 
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('D-TECT')">   
+	<button class="button2">D-TECT</button></a>
+	<div id="D-TECT" style="display:none;">
+	<br><br><div class="box16"><font color="black">D-TECT is an All-In-One Tool for Penetration Testing. This is specially programmed for Penetration Testers and Security Researchers to make their job easier, instead of launching different tools for performing different task. D-TECT provides multiple features and detection features which gather target information and finds different flaws in it. Features: Sub-domain Scanning Port Scanning Wordpress Scanning Wordpress Username Enumeration Wordpress Backup Grabbing Sensitive File Detection Same-Site Scripting Scanning Click Jacking Detection Powerful XSS vulnerability scanning SQL Injection vulnerability scanning User-Friendly UI </font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade <br>$ apt install git <br>$ apt install python2 <br>$ git clone <br>https://github.com/ihamquentin/<br>D-tect <br>$ cd D-TECT <br>$ chmod +x * <br>$ pip2 install requestsusage <br>$ python2 d-tect.py <br><br>Now select your options to use that particular tool..
+	</div></div><br> 
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Lazy Script')">   
+	<button class="button2">Termux Lazy Script</button></a>
+	<div id="Lazy Script" style="display:none;">
+	<br><br><div class="box8"><font color="black">This tool is specially Designed for Termux Beginner users.
+	This tool is very helpfull for Beginners. Here simply type number of tool to use after usage press enter to launch again Termux-Lazyscript.</font>
+	<br><br>Installation:<br><br>$ apt update && apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ git clone <br>https://github.com/Technical<br>Mujeeb/Termux-Lazyscript.git
+	<br>$ cd Termux-Lazyscript <br>$ chmod +x *<br>$ sh setup.sh<br><br>usage :<br>$ python2 ls.py<br><br>Now here simply type number to use that tool
+	Enjoy.</div></div><br> 
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Lazymux')">   
+	<button class="button2">Lazymux</button></a>
+	<div id="Lazymux" style="display:none;">
+	<br><br><div class="box8"><font color="black">Lazymux is python based tool in this tool and collection of tools for termux users. You can install some tools by typing number in easiest waythis tool is specially for lazy peoples.. </font>
+	<br><br>Installation:<br><br>$ apt update <br>$ apt upgrade <br>$ apt install git <br>$ apt install python2 <br>$ git clone <br>https://github.com/Gameye98/<br>Lazymux 
+	<br>$ cd Lazymux <br>$ chmod +X * <br><br>usage :<br>$ python2 lazymux.py <br><br>Now simply type the number of tool to install that particular tool in termux
+	</div></div><br> 
+	<p><font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Crips')">   
+	<button class="button2">Crips [IP Tool]</button></a>
+	<div id="Crips" style="display:none;">
+	<br><br><div class="box8"><font color="black">Crips IP Tools : This Tools is a collection of online IP Tools that can be used to quickly get information about IP Address's, Web Pages and DNS records. <br>Menu :
+	Whois lookup, Traceroute, DNS Lookup, Reverse DNS Lookup, GeoIP Lookup, Port Scan, Reverse IP Lookup </font>
+	<br><br>Installation:<br>$ apt update && apt upgrade <br>$ apt install git 
+	<br>$ apt install python2<br>$ apt install python <br>$ git clone <br>https://github.com/Manisso/Crips <br>$ cd Crips 
+	<br>$ chmod +x * <br>$ ./install.shRun <br>$ python2 crips.py <br><br>Now select your option, this tool can guide you easily..
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('EvilURL')">   
+	<button class="button2">EvilURL IDN Homograph</button></a>
+	<div id="EvilURL" style="display:none;">
+	<br><br><div class="box8"><font color="black">EvilURL used to generate an unicode domainurl for phishing. For idn homograph attack install Evil-URl </font>
+	<br><br>Installation:<br>
+	$ apt update 
+	<br>$ apt upgrade <br>$ apt install git 
+	<br>$ apt install python2 <br>$ git clone <br>https://github.com/UndeadSec<br>/EvilURL.git <br>$ cd EvilURL <br>$ chmod +x * <br>$ ls 
+	<br>$ python2 evilurl.py <br><br>Select option 1 to generate. Type domain name like site.com it will generate uncode url for phishing if you want to detect any url if that one is phishing url then run this tool. 
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('user')">   
+	<button class="button2">User Recon</button></a>
+	<div id="user" style="display:none;">
+	<br><br><div class="box17"><font color="black"></font>
+	Installation:<br><br>$ apt update && apt upgrade <br>$ apt install git 
+	<br>$ git clone <br>https://github.com/thelinux<br>choice/userrecon <br>$ cd userrecon <br>$ chmod +X * <br><br>usage :
+	<br>$ ./userrecon.sh<br><br>[?] Input username : (Here user name to find)
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('choice')">  		
+	<button class="button2">The Choice</button></a>
+	<div id="choice" style="display:none;">
+	<div class="box18"><font color="black">The Choice is a collection of 14 hacker tools from @thelinuxchoice </font>
+	<br><br>Installation:<br><br>
+	$ apt update && apt upgrade <br>$ apt install git <br>$ git clone https://github.com/thelinux<br>choice/thechoice 
+    <br>$ cd thechoice<br>$ chmod +x *<br><br>usage :
+    <br>$ ./thechoiceNow <br><br>Select your option and use it..
+    </div></div>
+    <br><br><h1><font color="red">Rate Us!!</font></h1>
+	 </font></font></p>	 
+	</div></center><br>
+	<center><span class="tribar" onclick="document.getElementById('Exploitation').style.width = '320px'" style="font-size:30px"><button class="command-tools">Exploitation<div class="griter">&#10095;</div></button></span>
+	<div id="Exploitation">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('Exploitation').style.width = '0px'">&times;
+	</a><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Golden')">  		
+	<button class="button2">Golden-Eye</button></a>
+	<div id="Golden" style="display:none;">
+	<div class="box18"><font color="black">GoldenEye
+	is an python app for SECURITY TESTING PURPOSES ONLY!
+	GoldenEye is a HTTP DoS Test Tool.
+	Attack Vector exploited: HTTP Keep Alive + NoCache</font>
+	<br><br>Installation:<br>$ apt update && apt upgrade<br>$ apt install git<br>$ apt install python2
+	<br>$ git clone <br>https://github.com/jseidl/Golden<br>Eye<br>$ cd GoldenEye<br>$ chmod +x *<br><br>Run :<br>$ python2 goldeneye.py [url]
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('hulk')">  		
+	<button class="button2">hulk [DOS Tool]</button></a>
+	<div id="hulk" style="display:none;">
+	<div class="box17"><font color="black">HULK DoS tool ported to Go with some additional features.</font>
+	<br><br>Installation:<br><br>$ apt update <br>$ apt upgrade<br>$ apt install git<br>$ apt install python2
+	<br>$ git clone <br>https://github.com/grafov/hulk<br>$ cd hulk<br>$ chmod +x *<br><br>usage :
+	<br>$ python2 hulk.py [url]
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('Zarp')">  		
+	<button class="button2">Zarp-Local Network Tool</button></a>
+	<div id="Zarp" style="display:none;">
+	<div class="box17"><font color="black">This tool works only in rooted phones. This is local network exploitation tool. </font>
+	<br><br>Installation:<br>$ apt update <br>$ apt upgrade<br>$ apt install git<br>$ apt install python2
+	<br>$ git clone <br>https://githum.com/hatRiot/zarp<br>$ cd zarp<br>$ chmod +x zarp.py<br><br>Run :<br>$ sudo python2 zarp.py
+	</div></div>
+		<br><br><font color="black"><div class="dropdown-content">
+		<a href="javascript:showhide('sploit')">   
+		<button class="button2">MetaSploit FrameWork</button></a>
+		<div id="sploit" style="display:none;">
+		<br><br><div class="box14"><font color="black">If you wish to install the metasploit-framework all by itself
+		You can use a shell script to install it.
+		Remember dont turn off your internet connection. <br>
+		<br>1. Uninstall Termux app.<br>2. Newly Install Termux App.<br>3. Open Termux App.<br>
+		<br>Installation:<br>$ apt update
+		<br>$ apt upgrade<br>$ apt install wget<br>$ wget https://github.com/rapid7/meta<br>sploit-framework<br>$ bash metasploit.sh<br><br>
+		This script will install the latest version of metasploit-framework.
+		script also include some extras to make updating metasploit faster.
+		If all goes well, i.e. No red colored warnings,
+		you can start metasploit using ./msfconsole.
+		Now take a coffe and sit down and wait 15-20 minutes
+		to install metasploit in termux. 
+		<br><br>After installation type this command :
+		<br>$ cd metasploit-framework
+		<br><br>Now run msfconsole
+		<br>$ ./msfconsole
+		<br><br>Enjoy Your Hacking...
+		</div></div> </font><br><br>
+		<font color="black"><font color="black"><div class="dropdown-content">
+		<a href="javascript:showhide('brutal')">  		
+		<button class="button2">Brutal</button></a>
+		<div id="brutal" style="display:none;">
+		<div class="box5"><font color="black">This is a toolkit to quickly create various payload,
+		powershell attack, virus attack and launch listener
+		for a human interface devices. This is extreamly useful
+		for executing scripts on a target machin.
+		For use this tool you must install sudo in your termux
+		means it need rooted devices.</font>
+		<br><br>Installation:<br><br>$ apt update && apt upgrade<br>$ apt install git<br>$ git clone https://github.com/Screetsec
+		<br>/Brutal<br>$ cd Brutal<br>$ chmod +x *<br><br>Run :<br>$ sudo ./Brutal.sh<br><br>Now simply select your option which you want.
+		</div></div><br><br>
+		<font color="black"><font color="black"><div class="dropdown-content">
+		<a href="javascript:showhide('tm')">  		
+		<button class="button2">TM - Venom</button></a>
+		<div id="tm" style="display:none;">
+		<div class="box14"><font color="black"></font>
+		Installation:<br>$ apt update<br>$ apt upgrade<br>$ apt install git<br>$ apt install python2
+		<br>$ git clone <br>https://github.com/Technical<br>Mujeeb/tmvenom<br>$ cd tmvenom<br>$ chmod +x *<br>$ sh install.sh<br><br>usage :<br>$ python2 tmvenom.py
+		<br><br>Now select payload options. 
+		</div></div>
+	<br><br><h1><font color="red">Rate Us!!</font></h1>
+	</div></div></center>
+	<br><center>
+	<span class="tribar" onclick="document.getElementById('more').style.width = '320px'" style="font-size:30px"><button class="command-tools">More<div class="griter">&#10095;</div></button></span>
+	<div id="more">
+	<a href="javascript:void(0)" class="close" onclick="document.getElementById('more').style.width = '0px'">&times;
+	</a><br>
+	<div class="dropdown-content">
+	<a href="javascript:showhide('Dark')">  
+	<button class="button2">DarkFly Tool</button></a>
+	<div id="Dark" style="display:none;">
+	<br><br><div class="box13"><font color="black">DarkFly-Tool is an installation tool for installing tools.
+	This tool makes it easy for you. You only have to choose the number.
+	Which tool you want to install. There are 530 tools ready for install. There are 7 SMS spam tools that you can use.</font>
+	<br><br>Installation:<br><br>
+	$ apt update && upgrade<br>$ apt install git
+	<br>$ git clone <br>https://github.com/Ranginang<br>67/DarkFly-Tool<br>$ cd DarkFly-Tool<br>$ chmod +x *<br>$ sh install<br><br>Run:-
+	<br>$ DarkFly<br><br>Now, Select option that you want. And it will install your selected tool. 
+	</div></div></div><br><br>
+	<div class="dropdown-content">
+	<a href="javascript:showhide('tuan')">  
+	<button class="button2">TOOLSINSTALLERv3</button></a>
+	<div id="tuan" style="display:none;">
+	<br><br><div class="box13"><font color="black">In this tool you can install 200 termux tools. You just need to select the tool that you want and it will install.</font>
+	<br><br>Installation:<br><br>
+	$ apt update && upgrade -y<br>$ apt install php<br>$ apt install curl<br>$ apt install ruby<br>$ apt install figlet<br>$ apt install python2<br>gem install lolcat
+	<br>$ git clone <br>git clone https://github.com/TUANB4DUT<br>/TOOLSINSTALLERv3<br>$ cd TOOLSINSTALLERv3<br>$ chmod +x TUANB4DUT.sh<br><br>Run:-
+	<br>$ sh TUANB4DUT.sh<br><br>Now, Select option that you want. And it will install your selected tool. 
+	</div></div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('TB')">  		
+	<button class="button2">TBomb Tool</button></a>
+	<div id="TB" style="display:none;">
+	<div class="box15"><font color="black">This Tool is the best for SMS Bombing.</font>
+	<br><br><br>Installation:<br><br>$ apt update && apt upgrade<br>$ apt install python<br>$ apt install git
+	<br>$ git clone <br>https://github.com/TheSpeedX<br>/TBomb<br>$ cd TBomb<br>$ chmod +x TBomb<br><br>Run:-<br>$ bash TBomb.sh
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('pi')">  		
+	<button class="button2">PiPhish</button></a>
+	<div id="pi" style="display:none;">
+	<div class="box11"><font color="black">This Tool is the best for Game account hacking. In this tool you can hack FreeFire Account, Mobile Legend Account, And much more. You can hack that by Phishing Attacks.</font>
+	<br><br>Installation:<br><br>$ apt update<br>$ apt upgrade<br>$ apt install ruby toilet figlet<br>$ gem install lolcat<br>$ apt-get install bash<br>$ apt install git<br>$ git clone https://github.com/ridwanirawan<br>/PiPhish
+	<br>$ cd PiPhish<br>$ ls<br><br>Run :<br>$ sh run.sh<br><br>Now enter this username and password. <br><br><font color="red">User Name:</font><font color="blue"> ridwan</font><br><font color="red">Password:</font><font color="blue"> erinafahira</font><br><br> Then Select Option That You Want.<br><br>And Send The Local Host link to your victim. 
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('map')">  		
+	<button class="button2">SQLMap</button></a>
+	<div id="map" style="display:none;">
+	<div class="box13"><font color="black">Sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
+	<br><br>Installation:<br>$ apt update && apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ apt install python<br>$ git clone <br>https://github.com/sqlmap<br>project/sqlmap
+	<br>$ cd sqlmap<br>$ chmod +x *<br><br>Run :<br>$ python2 sqlmap.py -h<br><br>It will show all options to use this tool sqlmap<br><br>$ python2 sqlmap.py
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('spray')">  		
+	<button class="button2">BruteSpray</button></a>
+	<div id="spray" style="display:none;">
+	<div class="box11"><font color="black">BruteSpray takes nmap GNMAP/XML output and 	
+	automatically brute-forces services with default credentials using Medusa.	BruteSpray can even find non-standard ports by using the -sV inside Nmap.</font>
+	<br><br>Installation:<br>$ apt update<br>$ apt upgrade<br>$ apt install git<br>$ apt install python2<br>$ git clone <br>https://github.com/x90skysn3k<br>/brutespray
+	<br>$ cd brutespray<br>$ pip2 install -r requirements.txt<br><br>Usage :<br>$ python2 brutespray.py<br><br>First do an nmap scan with 
+	<br><br>-oG nmap.gnmap or -oX nmap.xml.<br><br>$ python2 brutespray.py -h<br>$ python brutespray.py --file nmap.gnmap<br>$ python brutesrpay.py --file nmap.xml<br>$ python brutespray.py --file nmap.xml -i
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('dark')">  		
+	<button class="button2">DarkSploit</button></a>
+	<div id="dark" style="display:none;">
+	<div class="box11"><font color="black">This Tool Is The Best And Easy To Use. Execute these commands one by one to install DarkSploit.</font>
+	<br><br><br>Installation:<br><br>$ apt update<br>$ apt upgrade<br>$ apt install git<br>$ apt install python<br>$ apt install python2<br>$ git clone <br>https://github.com/LOoLzeC/<br>DarkSploit
+	<br>$ cd DarkSploit<br>$ cd install<br>$ sh installtermux.sh<br>$ pip2 install -r requirements.txt<br>cd ..<br><br>Run :<br>$ python2 DrXp.py<br><br><br>DarkSploit commands :<br><br>$ show options
+	<br>$ show exploits<br>$ use exploits<br><br>Here you get all options to use this tool.
+	</div></div><br><br>
+	<font color="black"><font color="black"><div class="dropdown-content">
+	<a href="javascript:showhide('wpa')">  		
+	<button class="button6">Wpascan WordPress Scan</button></a>
+	<div id="wpa" style="display:none;">
+	<div class="box11"><font color="black">Wpscan is a WordPress vulnerability scanner tool
+	for legal Or security purpose to find the vulnerabilities and fix it.
+	remember wpscan tool is only works in arm/arm64 device. If you want to check your phone architecture.<br><br><br>Type This Command :<br>$ dpkg-print-architecture</font>
+	<br><br><br>Installation Of Wpscan:<br><br>$ apt install git<br>$ apt install ruby<br>$ git clone <br>https://github.com/wpscanteam/<br>wpscan
+	<br>$ cd wpscan<br>$ chmod 777 wpscan.rb<br><br>Install some gems one by ome<br>$ gem install bundle<br>$  bundle install -j5<br><br>Run:<br>$ ruby wpscan.rb<br>$ ruby wpscan.rb< –url [wordpress url]<br>It will show all options to use this tool sqlmap<br><br>$ python2 sqlmap.py
+	</div></div>
+	<br><br><h1><font color="red">Rate Us!!</font></h1>	
+	</div></center></font></font>
+	</body>
+    <script>
+        function showhide(id) {
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+        }
+</script>
+</html>
